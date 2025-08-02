@@ -1,0 +1,55 @@
+{"level":"error","message":"Error updating market data:","service":"trading-platform","timestamp":"2025-08-01T07:19:45.624Z"}
+{"level":"error","message":"Error updating market data:","service":"trading-platform","timestamp":"2025-08-01T07:19:54.940Z"}
+{"level":"error","message":"Error updating market data:","service":"trading-platform","timestamp":"2025-08-02T04:40:10.199Z"}
+{"level":"error","message":"Error updating market data:","service":"trading-platform","timestamp":"2025-08-02T04:40:20.178Z"}
+{"level":"error","message":"Error updating market data:","service":"trading-platform","timestamp":"2025-08-02T04:41:10.306Z"}
+{"level":"error","message":"Error updating market data:","service":"trading-platform","timestamp":"2025-08-02T04:41:25.470Z"}
+{"level":"error","message":"Error updating market data:","service":"trading-platform","timestamp":"2025-08-02T04:41:35.722Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:06:37.659Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:06:57.683Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:07:07.641Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:07:17.674Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:08:16.963Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:08:26.917Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:10:30.867Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:11:20.918Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:12:50.882Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:13:00.875Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:13:10.865Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:13:20.860Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:13:30.870Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:13:40.879Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:16:40.870Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:16:50.897Z"}
+{"level":"error","message":"Error processing order:","service":"trading-platform","timestamp":"2025-08-02T05:18:47.836Z"}
+{"level":"error","message":"Order creation failed:","service":"trading-platform","timestamp":"2025-08-02T05:18:47.837Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:18:52.189Z"}
+{"level":"error","message":"Error processing order:","service":"trading-platform","timestamp":"2025-08-02T05:18:52.973Z"}
+{"level":"error","message":"Order creation failed:","service":"trading-platform","timestamp":"2025-08-02T05:18:52.974Z"}
+{"level":"error","message":"Error processing order:","service":"trading-platform","timestamp":"2025-08-02T05:18:57.119Z"}
+{"level":"error","message":"Order creation failed:","service":"trading-platform","timestamp":"2025-08-02T05:18:57.120Z"}
+{"level":"error","message":"Error processing order:","service":"trading-platform","timestamp":"2025-08-02T05:19:01.803Z"}
+{"level":"error","message":"Order creation failed:","service":"trading-platform","timestamp":"2025-08-02T05:19:01.804Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:19:02.176Z"}
+{"level":"error","message":"Error processing order:","service":"trading-platform","timestamp":"2025-08-02T05:19:09.603Z"}
+{"level":"error","message":"Order creation failed:","service":"trading-platform","timestamp":"2025-08-02T05:19:09.604Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:19:32.217Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:22:42.294Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:22:52.222Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:23:12.200Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:23:22.203Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:24:22.191Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:24:32.264Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:26:32.193Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:27:42.252Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:28:12.230Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:29:52.212Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:30:02.314Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:30:12.214Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:30:22.229Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:30:42.257Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:32:32.218Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:32:42.257Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:32:52.266Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:33:02.221Z"}
+{"level":"error","message":"Error fetching CoinGecko data:","service":"trading-platform","timestamp":"2025-08-02T05:33:12.222Z"}
