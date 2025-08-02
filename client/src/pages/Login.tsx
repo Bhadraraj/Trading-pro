@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { TrendingUp, Mail, Lock, AlertCircle } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 const Login: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,14 @@ const Login: React.FC = () => {
 
   const { login } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
+  
+  // Show success message if redirected from email verification
+  React.useEffect(() => {
+    if (location.state?.message) {
+      toast.success(location.state.message);
+    }
+  }, [location.state]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData(prev => ({
@@ -28,11 +37,13 @@ const Login: React.FC = () => {
 
     try {
       await login(formData.email, formData.password);
+      toast.success('Login successful!');
       navigate('/dashboard');
     } catch (error: any) {
       console.error('Login error:', error);
       const errorMessage = error.response?.data?.message || error.message || 'Login failed. Please try again.';
       setError(errorMessage);
+      toast.error(errorMessage);
     } finally {
       setIsLoading(false);
     }

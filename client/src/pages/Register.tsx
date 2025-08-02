@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { TrendingUp, User, Mail, Lock, AlertCircle } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 const Register: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ const Register: React.FC = () => {
     confirmPassword: '',
   });
   const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const { register } = useAuth();
@@ -26,14 +28,17 @@ const Register: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+    setSuccess('');
 
     if (formData.password !== formData.confirmPassword) {
       setError('Passwords do not match');
+      toast.error('Passwords do not match');
       return;
     }
 
     if (formData.password.length < 8) {
       setError('Password must be at least 8 characters long');
+      toast.error('Password must be at least 8 characters long');
       return;
     }
 
@@ -41,15 +46,67 @@ const Register: React.FC = () => {
 
     try {
       await register(formData.name, formData.email, formData.password);
-      navigate('/dashboard');
+      setSuccess('Registration successful! Please check your email for verification link.');
+      toast.success('Registration successful! Please check your email for verification.');
+      
+      // Redirect to login after showing success message
+      setTimeout(() => {
+        navigate('/login', { 
+          state: { message: 'Registration successful! Please verify your email and then log in.' }
+        });
+      }, 3000);
     } catch (error: any) {
       console.error('Registration error:', error);
       const errorMessage = error.response?.data?.message || error.message || 'Registration failed. Please try again.';
       setError(errorMessage);
+      toast.error(errorMessage);
     } finally {
       setIsLoading(false);
     }
   };
+
+  // If registration was successful, show success message
+  if (success) {
+    return (
+      <div className="min-h-screen bg-gray-900 flex items-center justify-center px-4">
+        <div className="max-w-md w-full space-y-8">
+          <div className="text-center">
+            <div className="flex justify-center">
+              <TrendingUp className="h-12 w-12 text-blue-500" />
+            </div>
+            <h2 className="mt-6 text-3xl font-bold text-white">Registration Successful!</h2>
+            <p className="mt-2 text-sm text-gray-400">
+              Please check your email for verification
+            </p>
+          </div>
+
+          <div className="bg-gray-800 p-8 rounded-lg border border-gray-700">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-green-600 bg-opacity-20 rounded-full flex items-center justify-center mx-auto">
+                <Mail className="h-8 w-8 text-green-500" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-2">Check Your Email</h3>
+                <p className="text-gray-300 mb-4">{success}</p>
+                <p className="text-sm text-gray-400">
+                  Redirecting to login page in a few seconds...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <p className="text-sm text-gray-400">
+              Already verified?{' '}
+              <Link to="/login" className="font-medium text-blue-400 hover:text-blue-300 transition-colors">
+                Sign in here
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-900 flex items-center justify-center px-4">
